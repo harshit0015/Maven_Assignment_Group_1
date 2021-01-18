@@ -18,7 +18,7 @@ public class Calculator {
     }
 
     public void div(int a , int b) {
-        int res = a % b;
+        int res = a / b;
         System.out.println(" Division of numbers are: " +res);
     }
 }
