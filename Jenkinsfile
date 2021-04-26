@@ -9,7 +9,7 @@ pipeline{
         }
         stage("Branch") {
             steps {
-                git branch: 'main', url: 'https://github.com/harshit005/Maven_Assignment_Group_1.git'
+                git branch: 'main', url: 'https://github.com/harshit0015/Maven_Assignment_Group_1.git'
             }
         }
         stage("Test"){
