@@ -2,12 +2,20 @@ pipeline{
     agent any
 
     stages{
-        stage('Build'){
+        stage("Build"){
             steps{
-                sh 'mvn clean compile'
+                echo 'Hello to java World'
             }
         }
-
-        
+        stage("Branch") {
+            steps {
+                git branch: 'main', url: 'https://github.com/harshit005/Maven_Assignmentn_group_1.git'
+            }
+        }
+        stage("Test"){
+            steps{
+                echo 'Testing the Jenkins file'
+            }
+        }
     }
 }
